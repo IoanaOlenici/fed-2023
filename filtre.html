@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+
+<head>
+</head>
+
+<body>
+  <h1>Trasee Montane</h1>
+  <label>Selectează înălțimea muntelui:</label>
+  <select id="inaltime">
+    <option value="">Toate înălțimile</option>
+    <option value="0-1000">0m - 1000m</option>
+    <option value="1000-1500">1000m - 1500m</option>
+    <option value="1500-2000">1500m - 2000m</option>
+    
+  </select>
+
+  <label>Selectează durata traseului:</label>
+  <select id="durata">
+    <option value="">Toate duratele</option>
+    <option value="0-1">0h - 1h</option>
+    <option value="1-2">1h - 2h</option>
+    <option value="2-4">2h - 4h</option>
+  </select>
+
+  <label>Selectează dificultatea:</label>
+  <select id="dificultate">
+    <option value="">Toate nivelele</option>
+    <option value="incepator">Începător</option>
+    <option value="mediu">Mediu</option>
+    <option value="avansat">Avansat</option>
+    
+  </select>
+
+  <button onclick="filtrareTrasee()">Filtrează</button>
+
+  <h2>Trasee Montane Disponibile</h2>
+  <div id="trasee_montane">
+
+    <p inaltime="800" durata="0.5" dificultate="incepator">Nume: Traseu 1 Durata:0.5h  Dificultate: incepator </p>
+    <p inaltime="1200" durata="1.5" dificultate="mediu">Nume: Traseu 2  Durata:1.5h  Dificultate: mediu</p>
+    <p inaltime="1800" durata="2.5" dificultate="mediu">Nume: Traseu 3  Durata:2.5h  Dificultate: mediu</p>
+    <p inaltime="1100" durata="1.2" dificultate="incepator">Nume: Traseu 4  Durata:1.2h  Dificultate: incepator</p>
+    <p inaltime="1900" durata="3" dificultate="avansat">Nume: Traseu 5  Durata:3h  Dificultate: avansat</p>
+  </div>
+
+  <script src="filtre.js"></script>
+</body>
+
+</html>
